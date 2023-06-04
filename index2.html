@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Sulit Kos | Solusi Irit Cari Kos</title>
+  </head>
+  <body onclick="searchBorderColor()">
+    <header>
+      <div class="wrap">
+        <nav>
+          <img src="Pictures/head-logo.png" alt="" />
+          <div class="search-box">
+            <i class="fa fa-search icon-search"></i>
+            <input type="text" name="" id="search" placeholder="cari kos" />
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kos Terdekat</a></li>
+            <li><a href="#">Kos Saya</a></li>
+            <li><i class="fa fa-user-circle profile"></i></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom-nav-container">
+        <div class="bottom-nav">
+          <div class="bottom-nav-menu">
+            <i class="fa fa-search icon-b-nav"></i>
+            <a href="#" class="link-b-nav">Cari</a>
+          </div>
+          <div class="bottom-nav-menu">
+            <i class="fa fa-map-marker icon-b-nav"></i>
+            <a href="#" class="link-b-nav">Kos Terdekat</a>
+          </div>
+          <div class="bottom-nav-menu">
+            <i class="fa fa-home icon-b-nav"></i>
+            <a href="#" class="link-b-nav">Kos Saya</a>
+          </div>
+          <div class="bottom-nav-menu">
+            <i class="fa fa-user icon-b-nav"></i>
+            <a href="#" class="link-b-nav">Profil</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slide-container">
+        <div
+          class="content-slide"
+          onmouseenter="showNav()"
+          onmouseleave="hideNav()"
+        >
+          <div class="imgslide fade">
+            <img src="Pictures/pict1.png" alt="" />
+          </div>
+
+          <div class="imgslide fade">
+            <img src="Pictures/pict2.png" alt="" />
+          </div>
+
+          <div class="imgslide fade">
+            <img src="Pictures/pict3.png" alt="" />
+          </div>
+
+          <a class="prev" onclick="nextSlide(-1)"> &#10094; </a>
+          <a class="next" onclick="nextSlide(1)"> &#10095; </a>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <div class="title-item">
+          <h3>Kos Premium di</h3>
+          <select>
+            <option value="">Semua Kota</option>
+            <option value="">Palu</option>
+            <option value="">Sigi</option>
+            <option value="">Donggala</option>
+          </select>
+          <a href="">Lihat Semua</a>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img card-1"></div>
+            <p class="jenis-kos">Putri</p>
+            <h5>Kos Yumlex Epic 666</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 1.600.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-2"></div>
+            <p class="jenis-kos">Putra</p>
+            <h5>Kos Putera Pratama / Kos Khusus Putra</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 2.000.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-3"></div>
+            <p class="jenis-kos">Campur</p>
+            <h5>Kos Elit Campuran Putra / Putri</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 2.100.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-4"></div>
+            <p class="jenis-kos">Putra</p>
+            <h5>Kos Yumlex Elit 999</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 1.800.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+        </div>
+        <a href="" class="more">Lihat Semua</a>
+      </div>
+      <div class="content-item">
+        <div class="title-item">
+          <h3>Kos Murah di</h3>
+          <select>
+            <option value="">Semua Kota</option>
+            <option value="">Palu</option>
+            <option value="">Sigi</option>
+            <option value="">Donggala</option>
+          </select>
+          <a href="">Lihat Semua</a>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img card-1"></div>
+            <p class="jenis-kos">Putri</p>
+            <h5>Kos Yumlex Epic 666</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 700.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-2"></div>
+            <p class="jenis-kos">Putra</p>
+            <h5>Kos Putera Pratama / Kos Khusus Putra</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 800.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-3"></div>
+            <p class="jenis-kos">Campur</p>
+            <h5>Kos Elit Campuran Putra / Putri</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 900.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+          <div class="card">
+            <div class="card-img card-4"></div>
+            <p class="jenis-kos">Putra</p>
+            <h5>Kos Yumlex Elit 999</h5>
+            <div class="location">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                Jl. Pend. Utara, Tondo, Kec. Palu Timur, Kota Palu, Sulawesi
+                Tengah
+              </p>
+            </div>
+            <p class="mulai">Mulai</p>
+            <span class="price-1">Rp. 600.000</span>
+            <span class="price-2">/ bln</span>
+          </div>
+        </div>
+        <a href="" class="more">Lihat Semua</a>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap-footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Ikut Kami</h4>
+            <div class="social-link">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Sulit Kos</h4>
+            <div class="footer-link">
+              <a href="#">Tentang Kami</a>
+              <a href="#">Pusat Bantuan</a>
+              <a href="#">Blog Sulit Kos</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Kebijakan</h4>
+            <div class="footer-link">
+              <a href="#">Kebijakan Privasi</a>
+              <a href="#">Syarat dan Ketentuan Umum</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Hubungi Kami</h4>
+            <div class="footer-link">
+              <div class="contact-link">
+                <i class="fa fa-envelope"></i>
+                <a href="#"> SulitKos@gmail.com</a>
+              </div>
+              <div class="contact-link">
+                <i class="fa fa-whatsapp"></i>
+                <a href="#"> 0812-3456-7890</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright &#169;2023 SulitKos.com</div>
+    </footer>
+    <script>
+      function searchBorderColor() {
+        const box = document.getElementById("search");
+        let Search = document.getElementsByClassName("search-box");
+        if (box === document.activeElement) {
+          Search[0].style.borderColor = "var(--blue)";
+        } else {
+          Search[0].style.borderColor = "var(--gray)";
+        }
+      }
+
+      let slideIndex = 1;
+      showSlide(slideIndex);
+
+      function nextSlide(n) {
+        showSlide((slideIndex += n));
+      }
+
+      function showSlide(n) {
+        let slides = document.getElementsByClassName("imgslide");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+      let prev = document.getElementsByClassName("prev")[0];
+      let next = document.getElementsByClassName("next")[0];
+      function showNav() {
+        prev.style.display = "block";
+        next.style.display = "block";
+      }
+      function hideNav() {
+        prev.style.display = "none";
+        next.style.display = "none";
+      }
+
+      let bottomNav = document.getElementsByClassName("bottom-nav-menu");
+      for (let i = 0; i < bottomNav.length; i++) {
+        bottomNav[i].addEventListener("mouseover", bottomNavShow);
+        function bottomNavShow() {
+          document.getElementsByClassName("icon-b-nav")[i].style.color =
+            "var(--blue)";
+          document.getElementsByClassName("link-b-nav")[i].style.color =
+            "var(--blue)";
+        }
+        bottomNav[i].addEventListener("mouseout", bottomNavHide);
+        function bottomNavHide() {
+          document.getElementsByClassName("icon-b-nav")[i].style.color = "";
+          document.getElementsByClassName("link-b-nav")[i].style.color = "";
+        }
+      }
+    </script>
+  </body>
+</html>
